@@ -5,4 +5,5 @@
 ### To run the project locally:
 1. Make sure you have [Node](https://nodejs.org/en/) installed -- you must have version 6.9.0 or higher
 2. Clone the project to your local machine
-3. In the root directory of your clone, run `npm start`
+3. In the root directory of your clone, run `npm install`
+4. In the same directory, run `npm start`
