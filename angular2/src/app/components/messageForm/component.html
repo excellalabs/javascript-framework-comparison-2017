@@ -1,0 +1,4 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value)" >
+  <input name="text" [(ngModel)]="messageText" />
+  <button type="submit">Post</button>
+</form>

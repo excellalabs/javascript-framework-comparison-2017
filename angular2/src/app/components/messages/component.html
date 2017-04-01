@@ -1,0 +1,8 @@
+<div>
+  Messages
+  <ul>
+    <li *ngFor="let message of messages | async">
+        {{message.time.toLocaleString()}} -- {{message.text}}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,32 @@
+{
+  "name": "framework_comparison",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "private": true,
+  "scripts": {
+    "prestart": "npm run init && npm run build",
+    "start": "node ./server/index.js",
+    "init": "npm run init:angular2 && npm run init:react && npm run init:vue",
+    "init:angular2": "cd angular2 && yarn install",
+    "init:react": "cd react-proj && yarn install",
+    "init:vue": "cd vue && yarn install",
+    "build": "concurrently 'npm run build:angular2' 'npm run build:react' 'npm run build:vue'",
+    "build:angular2": "cd angular2 && ng build",
+    "build:react": "cd react-proj && node ./node_modules/.bin/react-scripts build",
+    "build:vue": "cd vue && node build/build.js"
+  },
+  "author": "kgroat<apps@kevingroat.io>",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "opn": "^4.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-stockings": "^0.2.1",
+    "stockings-client": "^0.2.0",
+    "yarn": "^0.21.3"
+  }
+}
