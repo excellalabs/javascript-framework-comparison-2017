@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
 
-import { Observable } from 'rxjs/rx'
+import { Observable } from 'rxjs'
 
 import { Message } from '../models/message'
 import { client } from './client'
