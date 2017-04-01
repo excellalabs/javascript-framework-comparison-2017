@@ -20,10 +20,10 @@
   "author": "kgroat<apps@kevingroat.io>",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^3.4.0",
     "opn": "^4.0.2"
   },
   "dependencies": {
+    "concurrently": "^3.4.0",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "express-stockings": "^0.2.1",
