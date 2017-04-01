@@ -5,7 +5,8 @@
   "main": "server/index.js",
   "private": true,
   "scripts": {
-    "prestart": "npm run init && npm run build",
+    "postinstall": "npm run init",
+    "prestart": "npm run build",
     "start": "node ./server/index.js",
     "init": "npm run init:angular2 && npm run init:react && npm run init:vue",
     "init:angular2": "cd angular2 && yarn install",
